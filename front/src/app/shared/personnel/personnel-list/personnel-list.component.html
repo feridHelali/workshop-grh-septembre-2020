@@ -1,0 +1,32 @@
+<div class="container">
+    <br>
+    <div class="add">
+        <button [routerLink]="['/personnel/add']"> Add New Personnel</button>
+    </div>
+    <br>
+    <table class="blueTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Full Name</th>
+                <th>Phone</th>
+                <th>email</th>
+                <th>Postion</th>
+                <th>Avatar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let personnel of personnellist$ | async">
+                <th>{{personnel?.id}}</th>
+                <th>{{personnel?.fullname}}</th>
+                <th>{{personnel?.phone}}</th>
+                <th>{{personnel?.email }}</th>
+                <th>{{personnel?.position}}</th>
+                <th>
+                    <img class="avatar" [src]="personnel.avatar_url" alt="avatar">
+                </th>
+            </tr>
+        </tbody>
+
+    </table>
+</div>

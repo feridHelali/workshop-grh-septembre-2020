@@ -1,0 +1,10 @@
+{
+    "personnel": [{
+        "id": 1,
+        "fullname": "Salem KILANI",
+        "email": "salemkilani@gmail.com",
+        "phone": "22 55 66 99",
+        "avatar_url": "assets/avatar.jpg",
+        "position": "Developper"
+    }]
+}
