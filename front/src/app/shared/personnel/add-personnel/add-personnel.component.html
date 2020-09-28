@@ -1,23 +1,24 @@
 <div class="container">
-    <form [formGroup]="personelForm">
+    <form [formGroup]="personelForm" #f>
         <mat-form-field appearance="fill">
             <mat-label>Full Name</mat-label>
-            <input controlFormName="fullname" matInput type="text" placeholder="type  personnel name" required>
+            <input formControlName="fullname" matInput type="text" placeholder="type personnel name" required>
         </mat-form-field>
+
         <br>
         <mat-form-field appearance="fill">
             <mat-label>email</mat-label>
-            <input controlFormName="email" matInput type="email" placeholder="type email" required>
+            <input formControlName="email" matInput type="email" placeholder="type email" required>
         </mat-form-field>
         <br>
         <mat-form-field appearance="fill">
             <mat-label>Phone</mat-label>
-            <input controlFormName="phone" matInput type="text" placeholder="type phone" required>
+            <input formControlName="phone" matInput type="text" placeholder="type phone" required>
         </mat-form-field>
         <br>
         <mat-form-field appearance="fill">
             <mat-label>Position</mat-label>
-            <input controlFormName="position" matInput type="text" placeholder="type personnel position" required>
+            <input formControlName="position" matInput type="text" placeholder="type personnel position" required>
         </mat-form-field>
         <br>
     </form>

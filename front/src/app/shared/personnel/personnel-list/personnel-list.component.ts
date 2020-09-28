@@ -16,4 +16,8 @@ export class PersonnelListComponent implements OnInit {
     this.personnellist$=this.personnelService.getAllPersonnel();
   }
 
+  deletePersonnel(id){
+    console.log(id);
+  }
+
 }

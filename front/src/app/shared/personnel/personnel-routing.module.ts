@@ -3,13 +3,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from 'src/app/layout/home-page/home-page.component';
 import { AddPersonnelComponent } from './add-personnel/add-personnel.component';
 import { PersonnelListComponent } from './personnel-list/personnel-list.component';
+import { PersonnelResolver } from './personnel.resolver';
 import { UpdatePersonnelComponent } from './update-personnel/update-personnel.component';
 
 
 const routes: Routes = [
   {path:'',component:PersonnelListComponent},
   {path:'add',component:AddPersonnelComponent},
-  {path:'update/:id',component:UpdatePersonnelComponent}
+  {
+    path:'update/:id',
+    component:UpdatePersonnelComponent,
+    resolve:{
+      personnel:PersonnelResolver
+    }
+  }
 ];
 
 @NgModule({

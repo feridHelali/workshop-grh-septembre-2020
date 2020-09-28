@@ -1,10 +1,25 @@
 {
-    "personnel": [{
-        "id": 1,
-        "fullname": "Salem KILANI",
-        "email": "salemkilani@gmail.com",
-        "phone": "22 55 66 99",
-        "avatar_url": "assets/avatar.jpg",
-        "position": "Developper"
-    }]
+  "personnel": [
+    {
+      "fullname": "Salem KILANI BEN AMOR",
+      "email": "salemkilani02020@gmail.com",
+      "phone": "22 55 66 90",
+      "position": "Developper Operations",
+      "id": 1
+    },
+    {
+      "fullname": "Mohamed SALAH",
+      "email": "mohamed@gmail.com",
+      "phone": "56897916",
+      "position": "Developper",
+      "id": 2
+    },
+    {
+      "fullname": "Zine El Abidine Ben Ali",
+      "email": "zine@tunisia.tn",
+      "phone": "65897916",
+      "position": "Tester",
+      "id": 3
+    }
+  ]
 }
