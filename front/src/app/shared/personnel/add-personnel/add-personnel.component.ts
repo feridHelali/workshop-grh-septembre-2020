@@ -17,8 +17,8 @@ export class AddPersonnelComponent implements OnInit {
     private snackBar:MatSnackBar
   ) {
     this.personelForm = fb.group({
-      fullname: ['', Validators.required],
-      email: ['', Validators.email],
+      fullname: ['', Validators.required, Validators.minLength(10), Validators.maxLength(30)],
+      email: ['', Validators.required,Validators.email],
       phone: ['', Validators.required],
       position: ['Developper', Validators.required]
     })

@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let personnel of personnellist$ | async">
+            <tr *ngFor="let personnel of personnellist">
                 <th>{{personnel?.id}}</th>
                 <th>{{personnel?.fullname}}</th>
                 <th>{{personnel?.phone}}</th>
