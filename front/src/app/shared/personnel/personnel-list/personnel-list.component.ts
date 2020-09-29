@@ -11,7 +11,6 @@ import { PersonnelService } from '../personnel.service';
 })
 export class PersonnelListComponent implements OnInit,OnDestroy {
   private deleteSubscription:Subscription;
-  private loadPersonnelSubscription:Subscription;
   public personnellist:IPersonnel[];
   
   constructor(
@@ -36,7 +35,7 @@ export class PersonnelListComponent implements OnInit,OnDestroy {
     .subscribe({
       next: (data) => {
         this.snackBar.open("Personnel Successfully removed",'X',{duration:3000});
-        this.loadAllPersonnel()
+        this.loadAllPersonnel();
      
       },
       error: (error) => {
@@ -46,12 +45,13 @@ export class PersonnelListComponent implements OnInit,OnDestroy {
       complete: () =>console.log
     }
 
-    )
+    );
+    this.deleteSubscription.unsubscribe();
     
   }
 
   ngOnDestroy(): void {
-    this.deleteSubscription.unsubscribe();
+    
   }
   
 }

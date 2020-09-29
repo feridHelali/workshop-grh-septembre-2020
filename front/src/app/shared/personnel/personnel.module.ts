@@ -9,20 +9,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
 import { PersonnelService } from './personnel.service';
+import { ActivePersonnelListComponent } from './active-personnel-list/active-personnel-list.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 @NgModule({
   declarations: [
     PersonnelListComponent, 
     AddPersonnelComponent, 
-    UpdatePersonnelComponent],
+    UpdatePersonnelComponent, ActivePersonnelListComponent],
   imports: [
     CommonModule,
     PersonnelRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    MaterialModule
+    MaterialModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   exports:[PersonnelListComponent, AddPersonnelComponent, UpdatePersonnelComponent],
   providers:[PersonnelService]
