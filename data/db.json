@@ -13,6 +13,20 @@
       "phone": "56897916",
       "position": "Developper",
       "id": 2
+    },
+    {
+      "fullname": "Ferid HELALI",
+      "email": "ferid@alfacomputers.tn",
+      "phone": "22 55 6600",
+      "position": "Developper",
+      "id": 3
+    },
+    {
+      "fullname": "Salem KILANI",
+      "email": "sallem@isima.tn",
+      "phone": "65899865",
+      "position": "Developper",
+      "id": 4
     }
   ]
 }
